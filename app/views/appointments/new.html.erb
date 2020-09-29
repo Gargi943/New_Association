@@ -1,0 +1,22 @@
+<h1>Appointment</h1>
+
+<%= form_for @appointment do |f| %>
+
+	<p>
+		<strong>Patient</strong>
+		<%= f.select :patient_id, Patient.all.map(&:name) %>
+	</p>
+
+  <p>
+  	<strong>Physician</strong>
+  	<%= f.select :physician_id, Physician.all.map(&:name) %>
+  </p>
+	<p>
+		<strong>date</strong>
+		<%= f.date_field :date %>
+	</p>
+	<p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

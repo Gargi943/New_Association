@@ -1,0 +1,11 @@
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<p>
+  <strong>Supplier Name:</strong>
+  <%= @supplier.name %>
+</p>
+
+<%= link_to 'Back', suppliers_path %>
+
+<%= render 'accounts/form' %>

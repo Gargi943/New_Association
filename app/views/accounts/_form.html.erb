@@ -1,0 +1,17 @@
+<h2>Account</h2>
+<% if @supplier.account.present? %>
+ <%= @supplier.account.account_number%> 
+ <%= link_to 'Destroy', supplier_path(@supplier), method: :delete, data: { confirm: 'Are you sure?' } %> 
+<% end %>
+
+<h2>Add a account:</h2>
+<%= form_with model: @account, url: supplier_accounts_path(@supplier), local: true do |form| %>
+
+  <p>
+    <%= form.label :account_number %><br>
+    <%= form.text_field :account_number %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p> 
+<% end %>

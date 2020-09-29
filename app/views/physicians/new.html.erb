@@ -1,0 +1,12 @@
+<%= form_for @physician do |form|%>
+<p>
+	<strong>name:</strong>
+	<%= form.text_field :name %>
+</p>
+<p>
+	<%= form.submit %>
+</p>
+
+<% end %>
+
+<%= link_to 'Patient', new_patient_path %>

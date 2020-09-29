@@ -1,0 +1,20 @@
+<h2>Appointments</h2>
+<table>
+	<head>
+		<tr>
+			<th>date</th>
+			<th>patient</th>
+			<th>physician</th>
+		</tr>
+	</head>
+  <body>
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <td><%= appointment.date %></td>
+        <td><%= appointment.patient_id %></td>
+        <td><%= appointment.physician_id %></td>
+      </tr>
+    <% end %>
+  </body>
+</table>
+

@@ -1,0 +1,17 @@
+<table>
+	<head>
+		<tr>
+			<th>name</th>
+		</tr>
+	</head>
+  <body>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.name %></td>
+       </tr>
+     <% end %>
+  </body>
+
+</table>
+
+<%= link_to 'patient', new_patient_path %>
