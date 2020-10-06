@@ -31,9 +31,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 gem "cocoon"
 gem 'jquery-rails'
+
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'devise'
+gem "letter_opener", :group => :development
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
