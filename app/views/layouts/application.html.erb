@@ -9,10 +9,20 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+    <body>
+      <div class="header">
+        <%= link_to 'Supplier', suppliers_path, {:style => 'color: black'}%>  |  
+        <%= link_to 'Patient', new_patient_path, {:style => 'color: black'}%>   | 
+        <%= link_to 'Pysician', new_physician_path, {:style => 'color: black'}%>  | 
+        <%= link_to 'Author', authors_path, {:style => 'color: black'}%>
+      </div>
+      <%= yield %>
+      <div class="footer">
+        <%= link_to 'Supplier', suppliers_path, {:style => 'color: black'}%>  |  
+        <%= link_to 'Patient', new_patient_path, {:style => 'color: black'}%>   | 
+        <%= link_to 'Pysician', new_physician_path, {:style => 'color: black'}%>  | 
+        <%= link_to 'Author', authors_path, {:style => 'color: black'}%>
+      </div>
+    </body>
+  
 </html>

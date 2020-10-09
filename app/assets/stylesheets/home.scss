@@ -1,3 +1,32 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.sidenav {
+  height: 50%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  padding: 20px;
+  font-size: 25px;
+  color: blcak;
+  padding: 6px 8px 6px 16px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+

@@ -30,16 +30,19 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem "cocoon"
-gem 'jquery-rails'
 
 gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
-
+gem 'mini_racer', platforms: :ruby
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 gem "letter_opener", :group => :development
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
+gem "paperclip", "~> 5.0.0"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

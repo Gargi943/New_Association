@@ -5,6 +5,18 @@
   <strong>Supplier Name:</strong>
   <%= @supplier.name %>
 </p>
+<p>
+	<%= image_tag(@supplier.image.url) if @supplier.image? %> <!-- carrierwave -->
+	<%#= image_tag @supplier.photo.url %> <!-- paperclip -->
+
+	<%#= link_to @supplier do %> <!-- active storage multiple image uploader -->
+	    <%# @supplier.image.each do |image| %>
+	      <%#= image_tag image %>
+	    <%# end %>
+	<%# end %>
+
+	<%#= image_tag(@supplier.image) %> <!-- active storage single image uploader -->
+</p>
 
 <%= link_to 'Back', suppliers_path %>
 

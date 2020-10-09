@@ -1,20 +1,24 @@
-<h1>Listing Suppliers</h1>
- 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-  </tr>
- 
-  <% @suppliers.each do |supplier| %>
-    <tr>
-      <td><%= supplier.name %></td>
-      <td><%= link_to 'Show', supplier_path(supplier) %></td>
-      <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
-       <td><%= link_to 'Destroy', supplier_path(supplier), method: :delete, data: { confirm: 'Are you sure?' } %>
-       </td>
-    </tr>
-  <% end %>
-</table>
+<div class="center">
+  <h1>Listing Suppliers</h1>
+   
+  <table>
+    <thead>
+      <tr>
+        <td colspan="4">Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @suppliers.each do |supplier| %>
+        <tr>
+          <td><%= supplier.name %></td>
+          <td><%= link_to 'Show', supplier_path(supplier) %></td>
+          <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
+           <td><%= link_to 'Destroy', supplier_path(supplier), method: :delete, data: { confirm: 'Are you sure?' } %>
+           </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'new supplier', new_supplier_path %>
+  <%= link_to 'new supplier', new_supplier_path %>
+</div>
